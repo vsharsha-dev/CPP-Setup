@@ -120,3 +120,13 @@ You’ll see:
 Adding order 1 with price 100.5
 Cancelling order 1
 ```
+
+### Manual Compilation Without CMake
+(Just to understand what CMake is doing)
+
+```bash
+clang++ -std=c++20 -O3 -Wall -Werror -Iinclude src/*.cpp -o order_book
+./order_book
+```
+
+This is what CMake automates for you behind the scenes.
